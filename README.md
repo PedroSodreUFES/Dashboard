@@ -1,5 +1,4 @@
-# Pagina de Dashboard de um restaurante
-## Página que exibe o controle de entregas de um restaurante!
+# Pagina de Dashboard: COntrole de pedidos de um restaurante
 ## Tecnologias usadas:
 + Shadcn/ui
 + React
