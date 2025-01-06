@@ -1,4 +1,4 @@
-# Pagina de Dashboard: COntrole de pedidos de um restaurante
+# Pagina de Dashboard: Controle de pedidos de um restaurante
 ## Tecnologias usadas:
 + Shadcn/ui
 + React
