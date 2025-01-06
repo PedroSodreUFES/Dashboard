@@ -1,10 +1,19 @@
 import './index.css'
-import { Button } from './components/ui/button'
+import { RouterProvider } from 'react-router-dom'
+import { router } from './routes'
+import { HelmetProvider, Helmet } from 'react-helmet-async'
+import { Toaster } from 'sonner'
+import { ThemeProvider } from './components/theme/theme-provider'
 
 export function App() {
   return (
-   <div className="flex justify-center items-center h-screen">
-    <Button>Enviar</Button>
-   </div>
+
+    <ThemeProvider storageKey='pizzashop-theme' defaultTheme="dark" >
+      <HelmetProvider>
+        <Helmet titleTemplate='%s' />
+        <Toaster richColors />
+        <RouterProvider router={router} />
+      </HelmetProvider>
+    </ThemeProvider>
   )
 }
